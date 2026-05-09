@@ -1,0 +1,31 @@
+# ResNet-Conv1D Baseline 配置
+
+data:
+  preprocessed_dir: "/home/DataDisk/jxhuang/aps_preprocessed"
+  num_workers: 8
+  pin_memory: true
+
+model:
+  seq_len: 180
+  proj_dim: 256
+  use_pretrained: true
+
+training:
+  epochs: 20
+  batch_size: 512
+  learning_rate: 0.0003
+  warmup_steps: 500
+  weight_decay: 0.01
+  grad_clip: 1.0
+  mixed_precision: "bf16"
+  distributed: false
+
+device: "cuda"
+seed: 42
+
+logging:
+  use_wandb: false
+  wandb_project: 'resnet-conv1d-aps'
+  exp_name: 'resnet_conv1d'
+  checkpoint_dir: '/home/DataDisk/jxhuang/checkpoints/resnet_conv1d'
+  log_dir: 'baselines/resnet_conv1d/logs'
