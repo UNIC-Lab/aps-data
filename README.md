@@ -23,7 +23,8 @@ checkpoints, generated figures, and detailed result CSVs are not included.
 Dataset link:
 
 ```text
-Baidu Netdisk: TBD
+Baidu Netdisk: https://pan.baidu.com/s/1GHPOfXYwvDfO1zmtPpc0yw?pwd=p7sz
+Extraction code: p7sz
 ```
 
 Expected raw data layout for preprocessing:
